@@ -1,9 +1,7 @@
-import math
-
 class Point:
-    def __init__(self, x, y):
-        self.__x = x
-        self.__y = y
+    def __init__(self):
+        self.__x = 0
+        self.__y = 0
     
     def __str__(self):
         return f"({self.x},{self.y})"
@@ -35,10 +33,4 @@ class Point:
     @y.setter
     def y(self, y):
         self.set_y(y)
-    
-    def gradient(self):
-        return self.y / self.x
-    
-    def angle(self):
-        return math.atan(self.gradient())
     
