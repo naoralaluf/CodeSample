@@ -1,3 +1,4 @@
+import math
 
 class Point:
     def __init__(self):
@@ -34,4 +35,10 @@ class Point:
     @y.setter
     def y(self, y):
         self.set_y(y)
+    
+    def gradient(self):
+        return self.y // self.x
+    
+    def angle(self):
+        return math.atan(self.gradient())
     
