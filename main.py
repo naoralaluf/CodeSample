@@ -9,7 +9,7 @@ class Point:
         return f"({self.x},{self.y})"
     
     # getters and setters
-    
+
     def get_x(self):
         return self.__x
     
@@ -38,3 +38,5 @@ class Point:
     def y(self, y):
         self.set_y(y)
     
+    def slope(self):
+        return self.y / self.x
