@@ -41,11 +41,7 @@ class Point:
         self.set_y(y)
     
     def slope(self):
-<<<<<<< HEAD
         return self.y / self.x
-=======
-        return self.y // self.x
 
     def angle(self):
         return math.atan(self.slope())
->>>>>>> version2
