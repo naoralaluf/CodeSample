@@ -4,6 +4,7 @@ class Point:
         self.__x = 0
         self.__y = 0
     
+    # Get string version
     def __str__(self):
         return f"({self.x},{self.y})"
     
