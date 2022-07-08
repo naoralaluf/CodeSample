@@ -1,3 +1,5 @@
+import math
+
 class Point:
     # Constructor
     def __init__(self):
@@ -36,3 +38,8 @@ class Point:
     def y(self, y):
         self.set_y(y)
     
+    def slope(self):
+        return self.y // self.x
+
+    def angle(self):
+        return math.atan(self.slope())
